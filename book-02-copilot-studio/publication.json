@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "book-02",
+  "type": "book",
+  "order": 2,
+  "displayNumber": "02",
+  "status": "published",
+  "defaultLanguage": "es",
+  "cover": "cover-en.webp",
+  "editions": [
+    {
+      "language": "es",
+      "label": "Español",
+      "status": "published",
+      "title": "Copilot Studio y el Futuro del Centro de Excelencia de Power Platform",
+      "description": "Perspectivas para un modelo en evolución.",
+      "links": [
+        {
+          "type": "amazon",
+          "format": "kindle",
+          "label": "Amazon.com · Kindle",
+          "url": "https://www.amazon.com/dp/B0GV1XXD5Y"
+        },
+        {
+          "type": "amazon",
+          "format": "paperback",
+          "label": "Amazon.com · Paperback",
+          "url": "https://www.amazon.com/dp/B0GZGL3T1K"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "label": "English",
+      "status": "coming-soon",
+      "title": "Copilot Studio and the Future of the Power Platform Center of Excellence",
+      "description": "Perspectives for an evolving model.",
+      "links": []
+    }
+  ]
+}

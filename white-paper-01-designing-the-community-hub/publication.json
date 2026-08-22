@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "white-paper-01",
+  "type": "white-paper",
+  "order": 1,
+  "displayNumber": "01",
+  "status": "published",
+  "date": "August 2026",
+  "defaultLanguage": "en",
+  "cover": "cover-en.webp",
+  "editions": [
+    {
+      "language": "en",
+      "label": "English",
+      "status": "published",
+      "title": "Designing the Community Hub",
+      "description": "A blueprint for a scalable hub that enables a self-sustaining community.",
+      "links": []
+    }
+  ]
+}
