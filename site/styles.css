@@ -18,7 +18,7 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { margin: 0; min-height: 100%; background: var(--nfba-ink); color: var(--nfba-text); font-family: var(--sans); }
-body { overflow: auto; }
+body { overflow-x: hidden; overflow-y: auto; }
 button, a { -webkit-tap-highlight-color: transparent; }
 .library-app { display: flex; flex-direction: column; min-height: 1146px; overflow: visible; background: var(--nfba-ink); }
 
@@ -79,6 +79,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .cover-button:focus-visible img { outline: 3px solid var(--nfba-blue); outline-offset: 4px; }
 .shelf-ledge { display: none; }
 .spectrum-line { position: absolute; z-index: 4; right: 0; bottom: 0; left: 0; height: 3px; background: var(--nfba-spectrum); }
+
+@media (min-width: 761px) {
+  .shelf-wall { transform: scale(1.1); transform-origin: top center; margin-bottom: 108px; }
+}
 
 .dialog-backdrop { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(0,0,0,.78); backdrop-filter: blur(12px); animation: fade-in .16s ease both; }
 .publication-dialog { position: relative; display: grid; grid-template-columns: minmax(210px, .78fr) minmax(300px, 1.3fr); gap: clamp(26px, 4vw, 48px); width: min(850px, 94vw); max-height: 88svh; padding: clamp(24px, 4vw, 42px); overflow: auto; border: 1px solid var(--nfba-hairline); border-top: 3px solid transparent; border-image: var(--nfba-spectrum) 1; color: var(--nfba-text); background: linear-gradient(145deg, #1b1b23, #101016); box-shadow: 0 28px 90px rgba(0,0,0,.7); animation: rise-in .2s ease both; }
