@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "solution-02",
+  "type": "solution",
+  "order": 2,
+  "displayNumber": "02",
+  "status": "published",
+  "version": "v1.0",
+  "defaultLanguage": "multi",
+  "cover": "thumbnail.webp",
+  "editions": [
+    {
+      "language": "multi",
+      "label": "English · Español",
+      "status": "published",
+      "title": "Power Platform & Copilot Studio Adoption Strategy Assessment",
+      "description": "Evaluate adoption maturity across strategy, audiences, enablement, governance, use-case scaling, measurement and value, then generate an executive diagnosis and a 90-day action plan.",
+      "links": [
+        { "type": "launch", "label": "Open solution", "url": "https://nfernandezba.github.io/Power-Platform-Copilot-Studio-Adoption-Strategy-Assessment/" },
+        { "type": "repository", "label": "GitHub repository", "url": "https://github.com/nfernandezba/Power-Platform-Copilot-Studio-Adoption-Strategy-Assessment" }
+      ]
+    }
+  ]
+}

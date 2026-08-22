@@ -13,8 +13,8 @@ if (!siteDirectory) {
 const siteRoot = path.resolve(root, siteDirectory);
 const publicationsRoot = path.join(siteRoot, "assets", "publications");
 const dataRoot = path.join(siteRoot, "data");
-const directoryPattern = /^(book|white-paper)-\d{2}-[a-z0-9-]+$/;
-const allowedTypes = new Set(["book", "white-paper"]);
+const directoryPattern = /^(book|white-paper|solution)-\d{2}-[a-z0-9-]+$/;
+const allowedTypes = new Set(["book", "white-paper", "solution"]);
 const allowedStatuses = new Set(["published", "coming-soon", "draft", "hidden"]);
 
 const assert = (condition, message) => {
@@ -88,7 +88,7 @@ for (const directory of sourceDirectories) {
   });
 }
 
-const typeOrder = { book: 0, "white-paper": 1 };
+const typeOrder = { book: 0, "white-paper": 1, solution: 2 };
 publications.sort((left, right) => typeOrder[left.type] - typeOrder[right.type] || left.order - right.order);
 
 const catalogue = {

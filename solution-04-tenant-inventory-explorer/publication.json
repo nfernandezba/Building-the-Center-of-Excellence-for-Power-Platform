@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "solution-04",
+  "type": "solution",
+  "order": 4,
+  "displayNumber": "04",
+  "status": "published",
+  "version": "v1.0",
+  "defaultLanguage": "multi",
+  "cover": "thumbnail.webp",
+  "editions": [
+    {
+      "language": "multi",
+      "label": "English · Español",
+      "status": "published",
+      "title": "Power Platform Tenant Inventory Explorer",
+      "description": "Explore Power Platform and Copilot Studio tenant inventory using Microsoft Entra ID and the Power Platform Inventory API.",
+      "links": [
+        { "type": "launch", "label": "Open solution", "url": "https://nfernandezba.github.io/Power-Platform-Tenant-Inventory-Explorer/" },
+        { "type": "repository", "label": "GitHub repository", "url": "https://github.com/nfernandezba/Power-Platform-Tenant-Inventory-Explorer" }
+      ]
+    }
+  ]
+}

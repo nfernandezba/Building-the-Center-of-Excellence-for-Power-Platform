@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "solution-05",
+  "type": "solution",
+  "order": 5,
+  "displayNumber": "05",
+  "status": "published",
+  "version": "v1.0",
+  "defaultLanguage": "multi",
+  "cover": "thumbnail.webp",
+  "editions": [
+    {
+      "language": "multi",
+      "label": "English · Español",
+      "status": "published",
+      "title": "Power Platform & Copilot Studio Environment Strategy Assessment",
+      "description": "Assess the definition, coverage, documentation, communication and currency of your Power Platform and Copilot Studio environment strategy.",
+      "links": [
+        { "type": "launch", "label": "Open solution", "url": "https://nfernandezba.github.io/Power-Platform-Copilot-Studio-Environment-Assessment/" },
+        { "type": "repository", "label": "GitHub repository", "url": "https://github.com/nfernandezba/Power-Platform-Copilot-Studio-Environment-Assessment" }
+      ]
+    }
+  ]
+}

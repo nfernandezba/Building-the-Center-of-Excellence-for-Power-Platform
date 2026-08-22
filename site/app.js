@@ -17,7 +17,9 @@ function getEdition(publication, language = publication.defaultLanguage) {
 function renderEdition(publication, edition) {
   cover.src = publication.cover;
   cover.alt = `Cover of ${edition.title}`;
-  kicker.textContent = `${publication.type === "book" ? "Book" : "White paper"} ${publication.displayNumber}${publication.date ? ` · ${publication.date}` : ""}`;
+  cover.classList.toggle("is-landscape", publication.type === "solution");
+  const kind = publication.type === "book" ? "Book" : publication.type === "white-paper" ? "White paper" : "Solution";
+  kicker.textContent = `${kind} ${publication.displayNumber}${publication.version ? ` · ${publication.version}` : ""}${publication.date ? ` · ${publication.date}` : ""}`;
   title.textContent = edition.title;
   description.textContent = edition.description;
 
@@ -91,6 +93,7 @@ async function initialiseLibrary() {
     publications = catalogue.publications;
     renderShelf("book");
     renderShelf("white-paper");
+    renderShelf("solution");
   } catch (error) {
     console.error(error);
     document.querySelectorAll("[data-publication-shelf]").forEach((shelf) => {
