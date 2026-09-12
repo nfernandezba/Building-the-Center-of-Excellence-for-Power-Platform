@@ -8,4 +8,4 @@ Why balancing governance and enablement is the secret to sustainable innovation.
 
 - Language: English
 - Publication date: September 2026
-- Amazon link: Coming soon
+- Amazon: [Amazon.com](https://www.amazon.com/dp/B0HJ1Z6RJL)

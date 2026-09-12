@@ -8,4 +8,4 @@ A practical architecture guide to Microsoft 365 Copilot and Microsoft Copilot St
 
 - Language: English
 - Publication date: August 2026
-- Amazon link: Coming soon
+- Amazon: [Amazon.com](https://www.amazon.com/dp/B0HHC4PXBV)

@@ -32,10 +32,17 @@
     {
       "language": "en",
       "label": "English",
-      "status": "coming-soon",
+      "status": "published",
       "title": "Copilot Studio and the Future of the Power Platform Center of Excellence",
       "description": "Perspectives for an evolving model.",
-      "links": []
+      "links": [
+        {
+          "type": "amazon",
+          "format": "paperback",
+          "label": "Amazon.com · Paperback",
+          "url": "https://www.amazon.com/dp/B0H2VTJZGR"
+        }
+      ]
     }
   ]
 }

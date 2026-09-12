@@ -15,7 +15,13 @@
       "status": "published",
       "title": "Understanding the Agentic Solution Architecture",
       "description": "A practical architecture guide to Microsoft 365 Copilot and Microsoft Copilot Studio.",
-      "links": []
+      "links": [
+        {
+          "type": "amazon",
+          "label": "Amazon.com",
+          "url": "https://www.amazon.com/dp/B0HHC4PXBV"
+        }
+      ]
     }
   ]
 }

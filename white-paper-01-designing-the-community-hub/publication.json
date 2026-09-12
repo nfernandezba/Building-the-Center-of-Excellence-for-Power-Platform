@@ -15,7 +15,13 @@
       "status": "published",
       "title": "Designing the Community Hub",
       "description": "A blueprint for a scalable hub that enables a self-sustaining community.",
-      "links": []
+      "links": [
+        {
+          "type": "amazon",
+          "label": "Amazon.com",
+          "url": "https://www.amazon.com/dp/B0HJ2GSN7J"
+        }
+      ]
     }
   ]
 }
