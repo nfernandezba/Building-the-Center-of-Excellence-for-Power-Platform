@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "white-paper-04",
+  "type": "white-paper",
+  "order": 4,
+  "displayNumber": "04",
+  "status": "published",
+  "date": "September 2026",
+  "defaultLanguage": "en",
+  "cover": "cover-en.webp",
+  "editions": [
+    {
+      "language": "en",
+      "label": "English",
+      "status": "published",
+      "title": "Why Power Platform Partners Must Evolve",
+      "description": "Rethinking value, talent and the consulting role in the agentic Center of Excellence.",
+      "links": []
+    }
+  ]
+}
