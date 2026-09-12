@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "white-paper-03",
+  "type": "white-paper",
+  "order": 3,
+  "displayNumber": "03",
+  "status": "published",
+  "date": "September 2026",
+  "defaultLanguage": "en",
+  "cover": "cover-en.webp",
+  "editions": [
+    {
+      "language": "en",
+      "label": "English",
+      "status": "published",
+      "title": "Driving Real Innovation in the Agentic Era",
+      "description": "Why balancing governance and enablement is the secret to sustainable innovation.",
+      "links": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "white-paper-02",
+  "type": "white-paper",
+  "order": 2,
+  "displayNumber": "02",
+  "status": "published",
+  "date": "August 2026",
+  "defaultLanguage": "en",
+  "cover": "cover-en.webp",
+  "editions": [
+    {
+      "language": "en",
+      "label": "English",
+      "status": "published",
+      "title": "Understanding the Agentic Solution Architecture",
+      "description": "A practical architecture guide to Microsoft 365 Copilot and Microsoft Copilot Studio.",
+      "links": []
+    }
+  ]
+}
