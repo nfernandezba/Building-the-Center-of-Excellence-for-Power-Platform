@@ -43,7 +43,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .header-title h1 { margin: 0; color: #fff; font: 700 19px/1.05 var(--display); letter-spacing: -.025em; }
 .header-title > span { display: block; margin-top: 2px; color: var(--nfba-muted); font-size: 11px; }
 .header-actions { display: flex; align-items: center; gap: 8px; flex: none; }
-.nfba-version { padding: 4px 9px; border-radius: 999px; color: #fff; background: var(--nfba-indigo); font-size: 10px; font-weight: 700; letter-spacing: .04em; }
+.mvp-badge { display: inline-flex; align-items: center; gap: 7px; padding: 4px 10px 4px 6px; border: 1px solid rgba(255,192,0,.45); border-radius: 8px; color: #fff; background: linear-gradient(180deg, rgba(255,192,0,.14), rgba(255,192,0,.04)); }
+.mvp-icon { width: 18px; height: 18px; padding: 3px; border-radius: 5px; fill: #0b0b0f; background: var(--nfba-gold); flex: none; }
+.mvp-text { display: flex; flex-direction: column; gap: 1px; }
+.mvp-text strong { font: 700 11px/1.1 var(--display); letter-spacing: .01em; }
+.mvp-text small { color: #ffd452; font: 600 9px/1.1 var(--sans); letter-spacing: .02em; }
+.mvp-short { display: none; font: 700 11px/1 var(--display); letter-spacing: .04em; }
 .nfba-linkedin { display: inline-flex; align-items: center; gap: 6px; padding: 5px 8px; border: 1px solid var(--nfba-hairline); border-radius: 8px; color: var(--nfba-muted); font-size: 11px; font-weight: 700; text-decoration: none; transition: .16s ease; }
 .nfba-linkedin:hover, .nfba-linkedin:focus-visible { border-color: #0a66c2; color: #fff; background: #0a66c2; outline: none; }
 .linkedin-icon { display: grid; place-items: center; width: 18px; height: 18px; border-radius: 4px; color: #fff; background: #0a66c2; font: 700 11px/1 Arial, sans-serif; }
@@ -190,7 +195,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .nfba-header { min-height: 62px; padding: 8px 10px; gap: 9px; }
   .nfba-mark, .nfba-logo { width: 38px; height: 38px; }
   .header-title h1 { font-size: 16px; }
-  .header-title > span, .nfba-version, .nfba-linkedin span:not(.linkedin-icon) { display: none; }
+  .header-title > span, .nfba-linkedin span:not(.linkedin-icon), .mvp-text { display: none; }
+  .mvp-short { display: inline; }
+  .mvp-badge { gap: 5px; padding: 4px 7px 4px 4px; }
   .nfba-linkedin { padding: 4px; }
   .library-heading span { font-size: 11px; }
   .shelves { width: 100%; gap: 64px; }
