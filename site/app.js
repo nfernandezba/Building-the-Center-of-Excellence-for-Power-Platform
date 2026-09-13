@@ -133,16 +133,22 @@ window.addEventListener("keydown", (event) => { if (event.key === "Escape" && ac
 
 function syncChromeHeights() {
   const header = document.querySelector(".nfba-header");
+  const heading = document.querySelector(".library-heading");
   const nav = document.querySelector(".shelf-nav");
-  if (!header || !nav) return;
+  if (!header || !heading || !nav) return;
   const apply = () => {
     const rootStyle = document.documentElement.style;
     rootStyle.setProperty("--header-h", `${header.offsetHeight}px`);
+    rootStyle.setProperty("--heading-h", `${heading.offsetHeight}px`);
     const tabs = window.matchMedia("(max-width: 1000px)").matches;
     rootStyle.setProperty("--shelf-tabs-h", tabs ? `${nav.offsetHeight}px` : "0px");
   };
   apply();
-  if ("ResizeObserver" in window) new ResizeObserver(apply).observe(header);
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(apply);
+    observer.observe(header);
+    observer.observe(heading);
+  }
   window.addEventListener("resize", apply);
 }
 
