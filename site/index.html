@@ -31,32 +31,41 @@
       </a>
       <div class="header-title"><p>NFBA · Center of Excellence</p><h1>Knowledge Library</h1><span>Books, white papers and solutions by Nicolás Fernández</span></div>
       <div class="header-actions">
-        <p class="header-author">Nicolás Fernández</p>
+        <a class="header-author" href="https://www.linkedin.com/in/nfernandezba" target="_blank" rel="noreferrer" aria-label="Nicolás Fernández on LinkedIn"><span class="linkedin-icon" aria-hidden="true">in</span><span class="header-author-name">Nicolás Fernández</span></a>
         <img class="mvp-logo" src="assets/mvp/MVP_Digital_RGB_34_badge_full_color_blue_black.webp" width="160" height="60" alt="Microsoft Most Valuable Professional">
-        <a class="nfba-linkedin" href="https://www.linkedin.com/in/nfernandezba" target="_blank" rel="noreferrer" aria-label="LinkedIn · Nico Fernandez"><span class="linkedin-icon">in</span><span>Nico Fernandez</span></a>
       </div>
     </header>
 
     <main class="shelf-wall" id="library">
       <div class="library-heading"><p>Building the Center of Excellence for Power Platform</p><span>Select an item to explore the catalogue</span></div>
+      <div class="library-body">
+      <nav class="shelf-nav" aria-label="Shelves">
+        <p class="shelf-nav-title">Shelves</p>
+        <ul>
+          <li><a href="#shelf-book" data-shelf-link="book">Books <span data-publication-count-nav="book"></span></a></li>
+          <li><a href="#shelf-white-paper" data-shelf-link="white-paper">White papers <span data-publication-count-nav="white-paper"></span></a></li>
+          <li><a href="#shelf-solution" data-shelf-link="solution">Solutions <span data-publication-count-nav="solution"></span></a></li>
+        </ul>
+      </nav>
       <div class="shelves">
-        <section class="shelf-row" aria-label="Books">
+        <section class="shelf-row" id="shelf-book" aria-label="Books">
           <div class="shelf-label"><span>Books</span><small data-publication-count="book">00</small></div>
           <div class="cover-line" data-publication-shelf="book" aria-live="polite"></div>
           <div class="shelf-ledge" aria-hidden="true"></div>
         </section>
 
-        <section class="shelf-row shelf-row--compact" aria-label="White papers">
+        <section class="shelf-row shelf-row--compact" id="shelf-white-paper" aria-label="White papers">
           <div class="shelf-label"><span>White papers</span><small data-publication-count="white-paper">00</small></div>
           <div class="cover-line" data-publication-shelf="white-paper" aria-live="polite"></div>
           <div class="shelf-ledge" aria-hidden="true"></div>
         </section>
 
-        <section class="shelf-row shelf-row--solutions" aria-label="Solutions">
+        <section class="shelf-row shelf-row--solutions" id="shelf-solution" aria-label="Solutions">
           <div class="shelf-label"><span>Solutions</span><small data-publication-count="solution">00</small></div>
           <div class="cover-line" data-publication-shelf="solution" aria-live="polite"></div>
           <div class="shelf-ledge" aria-hidden="true"></div>
         </section>
+      </div>
       </div>
       <div class="spectrum-line" aria-hidden="true"></div>
     </main>
