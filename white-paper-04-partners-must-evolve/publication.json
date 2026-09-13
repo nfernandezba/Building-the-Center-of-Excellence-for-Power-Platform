@@ -15,7 +15,13 @@
       "status": "published",
       "title": "Why Power Platform Partners Must Evolve",
       "description": "Rethinking value, talent and the consulting role in the agentic Center of Excellence.",
-      "links": []
+      "links": [
+        {
+          "type": "amazon",
+          "label": "Amazon.com",
+          "url": "https://www.amazon.com/dp/B0HJMR579G"
+        }
+      ]
     }
   ]
 }

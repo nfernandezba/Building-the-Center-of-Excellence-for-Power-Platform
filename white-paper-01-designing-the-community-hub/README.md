@@ -8,4 +8,4 @@ A blueprint for a scalable hub that enables a self-sustaining community.
 
 - Language: English
 - Publication date: August 2026
-- Amazon link: Coming soon
+- Amazon: [Amazon.com](https://www.amazon.com/dp/B0HJ2GSN7J)

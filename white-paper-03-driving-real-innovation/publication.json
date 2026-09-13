@@ -15,7 +15,13 @@
       "status": "published",
       "title": "Driving Real Innovation in the Agentic Era",
       "description": "Why balancing governance and enablement is the secret to sustainable innovation.",
-      "links": []
+      "links": [
+        {
+          "type": "amazon",
+          "label": "Amazon.com",
+          "url": "https://www.amazon.com/dp/B0HJ1Z6RJL"
+        }
+      ]
     }
   ]
 }

@@ -37,7 +37,7 @@ Browse every book, white paper and solution on one interactive shelf, generated 
 
 | | Kindle | Paperback |
 |---|---|---|
-| 🇬🇧 English | *Coming soon* | *Coming soon* |
+| 🇬🇧 English | *Coming soon* | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) |
 | 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GV1XXD5Y) | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) |
 
 ### 📥 Free Community Downloads / Descargas Gratuitas
@@ -54,12 +54,12 @@ Book PDFs are available for a limited time as a contribution to the community.
 Each white paper develops one proposition within the framework of the book series. *English only.*
 *Cada white paper desarrolla una propuesta concreta dentro del marco de la serie de libros. Solo en inglés.*
 
-| # | Title | Published | Resources |
-|---|---|---|---|
-| 01 | Designing the Community Hub | August 2026 | [📁 White Paper 01](./white-paper-01-designing-the-community-hub/) |
-| 02 | Understanding the Agentic Solution Architecture | August 2026 | [📁 White Paper 02](./white-paper-02-understanding-agentic-architecture/) |
-| 03 | Driving Real Innovation in the Agentic Era | September 2026 | [📁 White Paper 03](./white-paper-03-driving-real-innovation/) |
-| 04 | Why Power Platform Partners Must Evolve | September 2026 | [📁 White Paper 04](./white-paper-04-partners-must-evolve/) |
+| # | Title | Published | Amazon | Resources |
+|---|---|---|---|---|
+| 01 | Designing the Community Hub | August 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJ2GSN7J) | [📁 White Paper 01](./white-paper-01-designing-the-community-hub/) |
+| 02 | Understanding the Agentic Solution Architecture | August 2026 | [Amazon.com](https://www.amazon.com/dp/B0HHC4PXBV) | [📁 White Paper 02](./white-paper-02-understanding-agentic-architecture/) |
+| 03 | Driving Real Innovation in the Agentic Era | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJ1Z6RJL) | [📁 White Paper 03](./white-paper-03-driving-real-innovation/) |
+| 04 | Why Power Platform Partners Must Evolve | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJMR579G) | [📁 White Paper 04](./white-paper-04-partners-must-evolve/) |
 
 ---
 
