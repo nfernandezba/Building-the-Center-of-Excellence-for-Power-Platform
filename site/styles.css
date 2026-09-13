@@ -17,10 +17,10 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html, body { margin: 0; min-height: 100%; background: var(--nfba-ink); color: var(--nfba-text); font-family: var(--sans); }
+html, body { margin: 0; min-height: 100%; background: #e9e4dc; color: var(--nfba-text); font-family: var(--sans); }
 body { overflow-x: hidden; overflow-y: auto; }
 button, a { -webkit-tap-highlight-color: transparent; }
-.library-app { display: flex; flex-direction: column; min-height: 1146px; overflow: visible; background: var(--nfba-ink); }
+.library-app { display: flex; flex-direction: column; min-height: 100vh; overflow: visible; background: #e9e4dc; }
 
 .nfba-header {
   position: relative;
@@ -48,90 +48,164 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .nfba-linkedin:hover, .nfba-linkedin:focus-visible { border-color: #0a66c2; color: #fff; background: #0a66c2; outline: none; }
 .linkedin-icon { display: grid; place-items: center; width: 18px; height: 18px; border-radius: 4px; color: #fff; background: #0a66c2; font: 700 11px/1 Arial, sans-serif; }
 
+/* ---- Studio wall -------------------------------------------------------
+   A warm plaster wall lit from above, with floating oak shelves. Textures are
+   inline SVG noise, so the page needs no photographic assets. */
 .shelf-wall {
+  --wall: #e9e4dc;
+  --wall-shade: #d6cfc4;
+  --oak: #b88a5a;
+  --oak-light: #d2a877;
+  --oak-dark: #8a6139;
   position: relative;
-  flex: none;
-  min-height: 1080px;
+  flex: 1 0 auto;
   isolation: isolate;
   overflow: hidden;
-  background: #0e0f14 url("assets/nfba-shelf-background-3-level-aligned.webp") center top / 100% 1080px no-repeat;
+  padding: clamp(28px, 4vw, 52px) 0 clamp(48px, 6vw, 84px);
+  color: #2b2620;
+  background:
+    radial-gradient(120% 70% at 50% -10%, rgba(255,251,243,.95), rgba(255,251,243,0) 60%),
+    linear-gradient(180deg, var(--wall) 0%, #e4ded5 55%, var(--wall-shade) 100%);
 }
-.shelf-wall::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(7,7,10,.34), transparent 20%, transparent 80%, rgba(7,7,10,.34)); pointer-events: none; }
-.library-heading { position: absolute; z-index: 4; top: 14px; left: clamp(18px, 4vw, 62px); display: flex; align-items: center; gap: 14px; max-width: calc(100% - 36px); padding: 8px 12px; border: 1px solid rgba(255,255,255,.09); border-radius: 8px; background: rgba(11,11,15,.68); box-shadow: 0 9px 26px rgba(0,0,0,.25); backdrop-filter: blur(12px); }
-.library-heading p, .library-heading span { margin: 0; }
-.library-heading p { color: #fff; font: 600 11px/1.2 var(--display); }
-.library-heading span { padding-left: 14px; border-left: 1px solid var(--nfba-hairline); color: var(--nfba-muted); font-size: 10px; }
-.shelves { position: relative; z-index: 2; display: grid; grid-template-rows: repeat(3, 360px); gap: 0; width: min(1420px, 91vw); min-height: 1080px; margin: 0 auto; padding: 0 3.5vw; }
-.shelf-row { position: relative; display: grid; grid-template-columns: 105px 1fr; align-items: end; min-height: 0; padding-bottom: 30px; }
-.shelf-label { align-self: center; display: flex; flex-direction: column; gap: 4px; padding: 8px 0; color: var(--nfba-muted); }
-.shelf-label span { font: 700 12px/1 var(--display); letter-spacing: .15em; text-transform: uppercase; }
-.shelf-label small { color: var(--nfba-teal); font: 700 10px/1 var(--sans); }
-.cover-line { display: flex; align-items: flex-end; justify-content: center; gap: clamp(34px, 6vw, 92px); height: 100%; min-width: 0; }
-.cover-button { position: relative; display: block; flex: none; padding: 0; border: 0; background: transparent; cursor: pointer; transform-origin: bottom center; transition: transform .2s ease, filter .2s ease; }
-.cover-button::after { content: ""; position: absolute; left: 8%; right: 8%; bottom: -8px; height: 13px; border-radius: 50%; background: rgba(0,0,0,.55); filter: blur(7px); }
-.shelf-row--compact .cover-button::after { bottom: -3px; height: 7px; filter: blur(3px); }
-.cover-button img { position: relative; z-index: 1; display: block; width: auto; height: clamp(170px, 27vh, 246px); max-width: 28vw; aspect-ratio: 1 / 1.414; object-fit: cover; border-radius: 2px 5px 5px 2px; box-shadow: -5px 3px 0 #08080b, 0 17px 26px rgba(0,0,0,.58); }
-.shelf-row--compact .cover-button img { height: clamp(138px, 23vh, 202px); }
-.shelf-row--solutions .cover-line { gap: clamp(14px, 1.8vw, 30px); }
-.shelf-row--solutions .cover-button img { width: auto; height: clamp(98px, 8vw, 150px); max-width: none; aspect-ratio: 16 / 9; border-radius: 7px; box-shadow: 0 13px 24px rgba(0,0,0,.6); }
-.shelf-row--solutions .cover-button::after { bottom: -4px; height: 8px; filter: blur(4px); }
-.cover-button:hover, .cover-button:focus-visible { z-index: 5; transform: translateY(-8px) scale(1.035); filter: saturate(1.08) brightness(1.05); outline: none; }
-.cover-button:focus-visible img { outline: 3px solid var(--nfba-blue); outline-offset: 4px; }
-.shelf-ledge { display: none; }
-.spectrum-line { position: absolute; z-index: 4; right: 0; bottom: 0; left: 0; height: 3px; background: var(--nfba-spectrum); }
-
-@media (min-width: 761px) {
-  .shelf-wall { transform: scale(1.1); transform-origin: top center; margin-bottom: 108px; }
+.shelf-wall::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .24 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.shelf-wall::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(72,58,42,.16), transparent 18%, transparent 82%, rgba(72,58,42,.16));
+  pointer-events: none;
 }
 
-.dialog-backdrop { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(0,0,0,.78); backdrop-filter: blur(12px); animation: fade-in .16s ease both; }
-.publication-dialog { position: relative; display: grid; grid-template-columns: minmax(210px, .78fr) minmax(300px, 1.3fr); gap: clamp(26px, 4vw, 48px); width: min(850px, 94vw); max-height: 88svh; padding: clamp(24px, 4vw, 42px); overflow: auto; border: 1px solid var(--nfba-hairline); border-top: 3px solid transparent; border-image: var(--nfba-spectrum) 1; color: var(--nfba-text); background: linear-gradient(145deg, #1b1b23, #101016); box-shadow: 0 28px 90px rgba(0,0,0,.7); animation: rise-in .2s ease both; }
-.dialog-close { position: absolute; z-index: 4; top: 12px; right: 12px; display: grid; place-items: center; width: 34px; height: 34px; padding: 0; border: 1px solid var(--nfba-hairline); border-radius: 7px; color: var(--nfba-text); background: var(--nfba-surface-2); font: 400 24px/1 var(--sans); cursor: pointer; }
-.dialog-close:hover, .dialog-close:focus-visible { border-color: var(--nfba-magenta); background: rgba(189,71,189,.16); outline: none; }
+.library-heading { position: relative; z-index: 4; display: flex; flex-direction: column; align-items: center; gap: 6px; width: min(1180px, calc(100% - 36px)); margin: 0 auto clamp(26px, 4vw, 44px); text-align: center; }
+.library-heading p, .library-heading span { max-width: 100%; margin: 0; text-wrap: balance; }
+.library-heading p { color: #2b2620; font: 600 clamp(1.15rem, 2.4vw, 1.75rem)/1.2 var(--display); letter-spacing: -.02em; }
+.library-heading span { color: #7a7064; font-size: 12px; letter-spacing: .02em; }
+
+.shelves { position: relative; z-index: 2; display: flex; flex-direction: column; gap: clamp(62px, 7vw, 100px); width: min(1240px, calc(100% - 48px)); margin: 0 auto; }
+
+.shelf-row { position: relative; display: block; padding-bottom: 24px; }
+/* A soft pool of light on the wall above each shelf. */
+.shelf-row::before { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: -120px; bottom: -40px; background: radial-gradient(50% 50% at 50% 50%, rgba(255,250,240,.7), rgba(255,250,240,0) 100%); pointer-events: none; }
+
+.cover-line { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: center; gap: clamp(28px, 4.2vw, 64px); min-height: 150px; padding: 0 clamp(20px, 5vw, 80px); }
+
+/* The floating oak shelf: a top surface seen slightly from above, a grained
+   front edge, and the shadow it casts on the wall. */
+.shelf-ledge {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 24px;
+  border-radius: 2px;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='40' preserveAspectRatio='none'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.0035 .42' numOctaves='4' seed='11'/%3E%3CfeColorMatrix values='0 0 0 0 .28 0 0 0 0 .17 0 0 0 0 .08 0 0 0 1.6 -.55'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E") 0 0 / 900px 100%,
+    linear-gradient(180deg, var(--oak-light) 0%, var(--oak) 35%, var(--oak-dark) 100%);
+  box-shadow: inset 0 1px 0 rgba(255,236,205,.55), inset 0 -2px 3px rgba(60,38,18,.35), 0 16px 22px -10px rgba(62,44,26,.55), 0 34px 46px -18px rgba(62,44,26,.35);
+}
+.shelf-ledge::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 9px;
+  border-radius: 2px 2px 0 0;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='20' preserveAspectRatio='none'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004 .6' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .27 0 0 0 0 .14 0 0 0 1.2 -.5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E") 0 0 / 900px 100%,
+    linear-gradient(180deg, #c49868 0%, #deb88a 100%);
+}
+
+/* A brushed-brass plaque on the shelf edge names the shelf. */
+.shelf-label { position: absolute; z-index: 3; left: clamp(14px, 2vw, 26px); bottom: 3px; display: flex; align-items: center; gap: 8px; height: 18px; padding: 0 9px; border-radius: 2px; color: #4b3a18; background: linear-gradient(180deg, #f1e2b8 0%, #d4b56f 48%, #b8944b 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 1px 2px rgba(40,26,8,.45); }
+.shelf-label span { font: 700 9px/1 var(--display); letter-spacing: .16em; text-transform: uppercase; text-shadow: 0 1px 0 rgba(255,244,214,.6); }
+.shelf-label small { padding-left: 8px; border-left: 1px solid rgba(75,58,24,.35); color: #4b3a18; font: 700 9px/1 var(--sans); text-shadow: 0 1px 0 rgba(255,244,214,.6); }
+
+/* Books and white papers stand on the shelf, lit from the upper left. */
+.cover-button { position: relative; display: block; flex: none; margin-bottom: 4px; padding: 0; border: 0; background: transparent; cursor: pointer; transform-origin: bottom center; transition: transform .25s ease; }
+.cover-button img { position: relative; z-index: 1; display: block; width: auto; height: clamp(170px, 24vw, 250px); max-width: 30vw; aspect-ratio: 1 / 1.414; object-fit: cover; border-radius: 1px 3px 3px 1px; box-shadow: 1px 0 0 rgba(0,0,0,.18), 10px 6px 14px -4px rgba(52,38,24,.45), 22px 14px 32px -10px rgba(52,38,24,.35); }
+/* Hinge crease near the spine and a faint sheen across the cover. */
+.cover-button::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border-radius: 1px 3px 3px 1px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.28) 0, rgba(255,255,255,.22) 1.4%, rgba(0,0,0,.12) 3.2%, rgba(0,0,0,0) 6.5%),
+    linear-gradient(115deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,0) 38%, rgba(0,0,0,0) 70%, rgba(0,0,0,.08) 100%);
+  pointer-events: none;
+}
+/* Contact shadow where the item meets the shelf. */
+.cover-button::after { content: ""; position: absolute; z-index: 0; left: -2%; right: -6%; bottom: -5px; height: 10px; border-radius: 50%; background: rgba(40,26,12,.5); filter: blur(4px); transition: opacity .25s ease; }
+.shelf-row--compact .cover-button img { height: clamp(150px, 20vw, 214px); }
+
+/* Solutions are framed prints resting on their shelf. */
+.shelf-row--solutions .cover-line { gap: clamp(12px, 2vw, 30px); padding: 0 clamp(12px, 3vw, 48px); }
+.shelf-row--solutions .cover-button { flex: 0 1 240px; min-width: 0; }
+.shelf-row--solutions .cover-button::before { display: none; }
+.shelf-row--solutions .cover-button img { width: 100%; height: auto; max-width: none; aspect-ratio: 16 / 9; padding: clamp(3px, .6vw, 7px); border: clamp(3px, .5vw, 6px) solid #2e2620; border-radius: 1px; background: #fbfaf6; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 8px 6px 12px -3px rgba(52,38,24,.45), 18px 12px 26px -10px rgba(52,38,24,.35); }
+.shelf-row--solutions .cover-button::after { left: 2%; right: -4%; bottom: -4px; height: 8px; }
+
+.cover-button:hover, .cover-button:focus-visible { z-index: 5; transform: translateY(-7px); outline: none; }
+.cover-button:hover::after, .cover-button:focus-visible::after { opacity: .45; }
+.cover-button:focus-visible img { outline: 3px solid var(--nfba-indigo); outline-offset: 5px; }
+.spectrum-line { display: none; }
+
+/* ---- Publication dialog: a paper card over the studio -------------------- */
+.dialog-backdrop { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(38,31,24,.52); backdrop-filter: blur(10px); animation: fade-in .16s ease both; }
+.publication-dialog { position: relative; display: grid; grid-template-columns: minmax(210px, .78fr) minmax(300px, 1.3fr); gap: clamp(26px, 4vw, 48px); width: min(850px, 94vw); max-height: 88svh; padding: clamp(24px, 4vw, 42px); overflow: auto; border: 1px solid #ddd6cb; border-top: 3px solid transparent; border-image: var(--nfba-spectrum) 1; border-radius: 4px; color: #2b2620; background: linear-gradient(160deg, #fdfcf9, #f4f0ea); box-shadow: 0 28px 80px rgba(38,28,18,.4); animation: rise-in .2s ease both; }
+.dialog-close { position: absolute; z-index: 4; top: 12px; right: 12px; display: grid; place-items: center; width: 34px; height: 34px; padding: 0; border: 1px solid #ddd6cb; border-radius: 7px; color: #4a4239; background: #fff; font: 400 24px/1 var(--sans); cursor: pointer; }
+.dialog-close:hover, .dialog-close:focus-visible { border-color: var(--nfba-indigo); color: var(--nfba-indigo); outline: none; }
 .dialog-cover-wrap { display: flex; align-items: center; justify-content: center; min-width: 0; }
-.dialog-cover-wrap img { display: block; width: min(100%, 280px); max-height: 65svh; aspect-ratio: 1 / 1.414; object-fit: cover; box-shadow: -7px 4px 0 #08080b, 0 24px 38px rgba(0,0,0,.55); }
-.dialog-cover-wrap img.is-landscape { width: min(100%, 390px); aspect-ratio: 16 / 9; border-radius: 9px; box-shadow: 0 24px 38px rgba(0,0,0,.55); }
+.dialog-cover-wrap img { display: block; width: min(100%, 280px); max-height: 65svh; aspect-ratio: 1 / 1.414; object-fit: cover; border-radius: 1px 3px 3px 1px; box-shadow: 1px 0 0 rgba(0,0,0,.18), 12px 10px 20px -6px rgba(52,38,24,.45), 26px 22px 44px -16px rgba(52,38,24,.35); }
+.dialog-cover-wrap img.is-landscape { width: min(100%, 390px); aspect-ratio: 16 / 9; padding: 8px; border: 7px solid #2e2620; border-radius: 1px; background: #fbfaf6; }
 .dialog-content { align-self: center; min-width: 0; padding-right: 14px; }
-.dialog-kicker { margin: 0 0 12px; color: var(--nfba-teal); font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
-.dialog-content h2 { margin: 0 0 16px; color: #fff; font: 700 clamp(1.65rem, 4vw, 2.65rem)/1.03 var(--display); letter-spacing: -.035em; }
-.dialog-description { margin: 0 0 22px; color: var(--nfba-muted); font-size: 14px; line-height: 1.65; }
+.dialog-kicker { margin: 0 0 12px; color: #14848f; font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.dialog-content h2 { margin: 0 0 16px; color: #1f1b16; font: 700 clamp(1.65rem, 4vw, 2.65rem)/1.05 var(--display); letter-spacing: -.035em; }
+.dialog-description { margin: 0 0 22px; color: #5e554b; font-size: 14px; line-height: 1.65; }
 .dialog-languages { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 24px; }
-.dialog-languages button { padding: 5px 9px; border: 1px solid #434351; border-radius: 999px; color: #d8dae2; background: transparent; font: 700 10px/1 var(--sans); cursor: pointer; }
-.dialog-languages button:hover, .dialog-languages button:focus-visible, .dialog-languages button.is-active { border-color: var(--nfba-teal); color: #fff; background: rgba(39,184,198,.14); outline: none; }
+.dialog-languages button { padding: 5px 9px; border: 1px solid #cfc6b9; border-radius: 999px; color: #4a4239; background: transparent; font: 700 10px/1 var(--sans); cursor: pointer; }
+.dialog-languages button:hover, .dialog-languages button:focus-visible, .dialog-languages button.is-active { border-color: #14848f; color: #0f5f67; background: rgba(39,184,198,.12); outline: none; }
 .dialog-links { display: flex; flex-wrap: wrap; gap: 9px; }
 .dialog-links a { padding: 10px 13px; border: 1px solid var(--nfba-indigo); border-radius: 7px; color: #fff; background: var(--nfba-indigo); font-size: 11px; font-weight: 700; text-decoration: none; }
-.dialog-links a:hover, .dialog-links a:focus-visible { border-color: var(--nfba-blue); background: var(--nfba-blue); outline: none; }
-.dialog-link-unavailable { padding: 10px 13px; border: 1px solid var(--nfba-hairline); border-radius: 7px; color: var(--nfba-muted); font-size: 11px; font-weight: 700; }
-.catalogue-error { align-self: center; color: var(--nfba-muted); font-size: 12px; text-align: center; }
+.dialog-links a:hover, .dialog-links a:focus-visible { border-color: #3e3b8c; background: #3e3b8c; outline: none; }
+.dialog-link-unavailable { padding: 10px 13px; border: 1px solid #ddd6cb; border-radius: 7px; color: #7a7064; font-size: 11px; font-weight: 700; }
+.catalogue-error { align-self: center; color: #7a7064; font-size: 12px; text-align: center; }
 
 @keyframes fade-in { from { opacity: 0; } }
 @keyframes rise-in { from { opacity: 0; transform: translateY(10px) scale(.985); } }
 
 @media (max-width: 760px) {
-  body { overflow: auto; }
-  .library-app { height: auto; min-height: 100svh; overflow: visible; }
   .nfba-header { min-height: 62px; padding: 8px 10px; gap: 9px; }
   .nfba-mark, .nfba-logo { width: 38px; height: 38px; }
   .header-title h1 { font-size: 16px; }
   .header-title > span, .nfba-version, .nfba-linkedin span:not(.linkedin-icon) { display: none; }
   .nfba-linkedin { padding: 4px; }
-  .library-app { min-height: 1102px; }
-  .shelf-wall { min-height: 1040px; background-size: auto 1040px; }
-  .library-heading { top: 10px; left: 10px; padding: 7px 9px; }
-  .library-heading span { display: none; }
-  .shelves { grid-template-rows: repeat(3, calc(1040px / 3)); width: 100%; min-height: 1040px; padding: 0 12px; }
-  .shelf-row { grid-template-columns: 58px 1fr; padding-bottom: 29px; }
-  .shelf-label span { font-size: 9px; writing-mode: vertical-rl; transform: rotate(180deg); }
-  .cover-line { justify-content: flex-start; gap: 24px; padding: 0 18px 0 10px; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: none; }
+  .library-heading span { font-size: 11px; }
+  .shelves { width: 100%; gap: 64px; }
+  .shelf-ledge { border-radius: 0; }
+  .shelf-label { left: 12px; }
+  .cover-line { justify-content: flex-start; gap: 24px; padding: 0 22px 0 18px; overflow-x: auto; overflow-y: visible; overscroll-behavior-inline: contain; scrollbar-width: none; }
   .cover-line::-webkit-scrollbar { display: none; }
-  .cover-button img { height: 212px; max-width: none; }
-  .shelf-row--compact .cover-button img { height: 176px; }
-  .shelf-row--solutions .cover-button img { height: 128px; }
-  .shelf-ledge { left: 46px; }
+  .cover-button img { height: 200px; max-width: none; }
+  .shelf-row--compact .cover-button img { height: 168px; }
+  .shelf-row--solutions .cover-button { flex: 0 0 200px; }
   .dialog-backdrop { align-items: center; padding: 12px; }
   .publication-dialog { grid-template-columns: minmax(88px, .62fr) minmax(0, 1.38fr); gap: 18px; width: 100%; max-height: 90svh; padding: 30px 18px 24px; }
   .dialog-cover-wrap { align-items: flex-start; }
   .dialog-cover-wrap img { width: 100%; max-height: none; }
+  .dialog-cover-wrap img.is-landscape { padding: 4px; border-width: 4px; }
   .dialog-content { padding-right: 0; }
   .dialog-content h2 { margin-bottom: 10px; font-size: clamp(1.15rem, 5vw, 1.55rem); }
   .dialog-description { margin-bottom: 14px; font-size: 12px; line-height: 1.45; }
