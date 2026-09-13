@@ -115,7 +115,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 /* A soft pool of light on the wall above each shelf. */
 .shelf-row::before { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: -120px; bottom: -40px; background: radial-gradient(50% 50% at 50% 50%, rgba(255,250,240,.7), rgba(255,250,240,0) 100%); pointer-events: none; }
 
-.cover-line { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: center; gap: clamp(28px, 4.2vw, 64px); min-height: 150px; padding: 0 clamp(20px, 5vw, 80px); }
+.cover-line { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: flex-start; gap: clamp(28px, 4.2vw, 64px); min-height: 150px; padding: 0 clamp(20px, 3vw, 48px); }
 
 /* The floating oak shelf: a top surface seen slightly from above, a grained
    front edge, and the shadow it casts on the wall. */
@@ -171,7 +171,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .shelf-row--compact .cover-button img { height: clamp(150px, 20vw, 214px); }
 
 /* Solutions are framed prints resting on their shelf. */
-.shelf-row--solutions .cover-line { gap: clamp(12px, 2vw, 30px); padding: 0 clamp(12px, 3vw, 48px); }
+.shelf-row--solutions .cover-line { gap: clamp(12px, 2vw, 30px); }
 .shelf-row--solutions .cover-button { flex: 0 1 240px; min-width: 0; }
 .shelf-row--solutions .cover-button::before { display: none; }
 .shelf-row--solutions .cover-button img { width: 100%; height: auto; max-width: none; aspect-ratio: 16 / 9; padding: clamp(3px, .6vw, 7px); border: clamp(3px, .5vw, 6px) solid #2e2620; border-radius: 1px; background: #fbfaf6; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), 8px 6px 12px -3px rgba(52,38,24,.45), 18px 12px 26px -10px rgba(52,38,24,.35); }
