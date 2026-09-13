@@ -8,4 +8,5 @@ Rethinking value, talent and the consulting role in the agentic Center of Excell
 
 - Language: English
 - Publication date: September 2026
+- Digital edition (A4 PDF): [Why Power Platform Partners Must Evolve v1.0.pdf](./Why%20Power%20Platform%20Partners%20Must%20Evolve%20v1.0.pdf)
 - Amazon: [Amazon.com](https://www.amazon.com/dp/B0HJMR579G)
