@@ -28,17 +28,17 @@ Browse every book, white paper and solution on one interactive shelf, generated 
 
 **Book 01 — Defining the Framework Structure**
 
-| | Kindle | Paperback |
-|---|---|---|
-| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0GD8DTL52) | [Amazon.com](https://www.amazon.com/dp/B0GDDRCD2C) |
-| 🇪🇸 Español | [Amazon.es](https://www.amazon.es/dp/B0FSDWM77P) | [Amazon.es](https://www.amazon.es/dp/B0FSDWQMHW) |
+| | Amazon |
+|---|---|
+| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0GDDRCD2C) |
+| 🇪🇸 Español | [Amazon.es](https://www.amazon.es/dp/B0FSDWQMHW) |
 
 **Book 02 — Copilot Studio and the Future of the Power Platform CoE**
 
-| | Kindle | Paperback |
-|---|---|---|
-| 🇬🇧 English | *Coming soon* | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) |
-| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GV1XXD5Y) | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) |
+| | Amazon |
+|---|---|
+| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) |
+| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) |
 
 ### 📥 Free Community Downloads / Descargas Gratuitas
 
