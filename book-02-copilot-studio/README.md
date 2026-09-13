@@ -32,10 +32,10 @@ This second volume in the series builds directly on the framework defined in Boo
 
 ## 🛒 Get the Book / Consigue el Libro
 
-| | Kindle | Paperback |
-|---|---|---|
-| 🇬🇧 English | *Coming soon* | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) |
-| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GV1XXD5Y) | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) |
+| | Amazon |
+|---|---|
+| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) |
+| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) |
 
 ---
 

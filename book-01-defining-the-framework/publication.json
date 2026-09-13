@@ -17,14 +17,7 @@
       "links": [
         {
           "type": "amazon",
-          "format": "kindle",
-          "label": "Amazon.com · Kindle",
-          "url": "https://www.amazon.com/dp/B0GD8DTL52"
-        },
-        {
-          "type": "amazon",
-          "format": "paperback",
-          "label": "Amazon.com · Paperback",
+          "label": "Amazon.com",
           "url": "https://www.amazon.com/dp/B0GDDRCD2C"
         }
       ]
@@ -38,14 +31,7 @@
       "links": [
         {
           "type": "amazon",
-          "format": "kindle",
-          "label": "Amazon.es · Kindle",
-          "url": "https://www.amazon.es/dp/B0FSDWM77P"
-        },
-        {
-          "type": "amazon",
-          "format": "paperback",
-          "label": "Amazon.es · Paperback",
+          "label": "Amazon.es",
           "url": "https://www.amazon.es/dp/B0FSDWQMHW"
         }
       ]
