@@ -28,17 +28,17 @@ Browse every book, white paper and solution on one interactive shelf, generated 
 
 **Book 01 — Defining the Framework Structure**
 
-| | Amazon |
-|---|---|
-| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0GDDRCD2C) |
-| 🇪🇸 Español | [Amazon.es](https://www.amazon.es/dp/B0FSDWQMHW) |
+| | Amazon.com | Amazon.es |
+|---|---|---|
+| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0GDDRCD2C) | [Amazon.es](https://www.amazon.es/dp/B0GDDRCD2C) |
+| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0FSDWQMHW) | [Amazon.es](https://www.amazon.es/dp/B0FSDWQMHW) |
 
 **Book 02 — Copilot Studio and the Future of the Power Platform CoE**
 
-| | Amazon |
-|---|---|
-| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) |
-| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) |
+| | Amazon.com | Amazon.es |
+|---|---|---|
+| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0H2VTJZGR) | [Amazon.es](https://www.amazon.es/dp/B0H2VTJZGR) |
+| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0GZGL3T1K) | [Amazon.es](https://www.amazon.es/dp/B0GZGL3T1K) |
 
 ### 📥 Free Community Downloads / Descargas Gratuitas
 
@@ -56,11 +56,11 @@ Each white paper develops one proposition within the framework of the book serie
 
 | # | Title | Published | Amazon | Resources |
 |---|---|---|---|---|
-| 01 | Designing the Community Hub | August 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJ2GSN7J) | [📁 White Paper 01](./white-paper-01-designing-the-community-hub/) |
-| 02 | Understanding the Agentic Solution Architecture | August 2026 | [Amazon.com](https://www.amazon.com/dp/B0HHC4PXBV) | [📁 White Paper 02](./white-paper-02-understanding-agentic-architecture/) |
-| 03 | Driving Real Innovation in the Agentic Era | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJ1Z6RJL) | [📁 White Paper 03](./white-paper-03-driving-real-innovation/) |
-| 04 | Why Power Platform Partners Must Evolve | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJMR579G) | [📁 White Paper 04](./white-paper-04-partners-must-evolve/) |
-| 05 | After Agile | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJNWCR23) | [📁 White Paper 05](./white-paper-05-after-agile/) |
+| 01 | Designing the Community Hub | August 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJ2GSN7J) · [Amazon.es](https://www.amazon.es/dp/B0HJ2GSN7J) | [📁 White Paper 01](./white-paper-01-designing-the-community-hub/) |
+| 02 | Understanding the Agentic Solution Architecture | August 2026 | [Amazon.com](https://www.amazon.com/dp/B0HHC4PXBV) · [Amazon.es](https://www.amazon.es/dp/B0HJMTL9L7) | [📁 White Paper 02](./white-paper-02-understanding-agentic-architecture/) |
+| 03 | Driving Real Innovation in the Agentic Era | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJ1Z6RJL) · [Amazon.es](https://www.amazon.es/dp/B0HJ1Z6RJL) | [📁 White Paper 03](./white-paper-03-driving-real-innovation/) |
+| 04 | Why Power Platform Partners Must Evolve | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJMR579G) · [Amazon.es](https://www.amazon.es/dp/B0HJMR579G) | [📁 White Paper 04](./white-paper-04-partners-must-evolve/) |
+| 05 | After Agile | September 2026 | [Amazon.com](https://www.amazon.com/dp/B0HJNWCR23) · [Amazon.es](https://www.amazon.es/dp/B0HJNWCR23) | [📁 White Paper 05](./white-paper-05-after-agile/) |
 
 ---
 

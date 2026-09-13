@@ -9,4 +9,4 @@ Why the agentic era will reward whole-system thinking and expose weak consulting
 - Language: English
 - Publication date: September 2026
 - Digital edition (A4 PDF): [After Agile v1.0.pdf](./After%20Agile%20v1.0.pdf)
-- Amazon: [Amazon.com](https://www.amazon.com/dp/B0HJNWCR23)
+- Amazon: [Amazon.com](https://www.amazon.com/dp/B0HJNWCR23) · [Amazon.es](https://www.amazon.es/dp/B0HJNWCR23)
