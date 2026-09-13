@@ -15,7 +15,13 @@
       "status": "published",
       "title": "After Agile",
       "description": "Why the agentic era will reward whole-system thinking and expose weak consulting.",
-      "links": []
+      "links": [
+        {
+          "type": "amazon",
+          "label": "Amazon.com",
+          "url": "https://www.amazon.com/dp/B0HJNWCR23"
+        }
+      ]
     }
   ]
 }
