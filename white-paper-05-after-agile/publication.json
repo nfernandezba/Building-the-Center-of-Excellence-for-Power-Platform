@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "white-paper-05",
+  "type": "white-paper",
+  "order": 5,
+  "displayNumber": "05",
+  "status": "published",
+  "date": "September 2026",
+  "defaultLanguage": "en",
+  "cover": "cover-en.webp",
+  "editions": [
+    {
+      "language": "en",
+      "label": "English",
+      "status": "published",
+      "title": "After Agile",
+      "description": "Why the agentic era will reward whole-system thinking and expose weak consulting.",
+      "links": []
+    }
+  ]
+}
