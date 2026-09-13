@@ -131,5 +131,21 @@ closeButton.addEventListener("click", closePublication);
 backdrop.addEventListener("mousedown", (event) => { if (event.target === backdrop) closePublication(); });
 window.addEventListener("keydown", (event) => { if (event.key === "Escape" && activePublication) closePublication(); });
 
+function syncChromeHeights() {
+  const header = document.querySelector(".nfba-header");
+  const nav = document.querySelector(".shelf-nav");
+  if (!header || !nav) return;
+  const apply = () => {
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty("--header-h", `${header.offsetHeight}px`);
+    const tabs = window.matchMedia("(max-width: 1000px)").matches;
+    rootStyle.setProperty("--shelf-tabs-h", tabs ? `${nav.offsetHeight}px` : "0px");
+  };
+  apply();
+  if ("ResizeObserver" in window) new ResizeObserver(apply).observe(header);
+  window.addEventListener("resize", apply);
+}
+
+syncChromeHeights();
 initialiseLibrary();
 trackShelfInView();
