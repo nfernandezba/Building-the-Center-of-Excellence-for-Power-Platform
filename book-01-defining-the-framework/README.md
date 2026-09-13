@@ -30,10 +30,10 @@ From the fundamentals of what a Center of Excellence is and how it connects to I
 
 ## 🛒 Get the Book / Consigue el Libro
 
-| | Amazon |
-|---|---|
-| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0GDDRCD2C) |
-| 🇪🇸 Español | [Amazon.es](https://www.amazon.es/dp/B0FSDWQMHW) |
+| | Amazon.com | Amazon.es |
+|---|---|---|
+| 🇬🇧 English | [Amazon.com](https://www.amazon.com/dp/B0GDDRCD2C) | [Amazon.es](https://www.amazon.es/dp/B0GDDRCD2C) |
+| 🇪🇸 Español | [Amazon.com](https://www.amazon.com/dp/B0FSDWQMHW) | [Amazon.es](https://www.amazon.es/dp/B0FSDWQMHW) |
 
 ---
 
@@ -48,6 +48,6 @@ Available for a limited time · *Disponible por tiempo limitado*
 ## 📂 Resources / Recursos
 
 | Resource | Status |
-|---|---|
+|---|---|---|
 | Templates / Plantillas | *Coming soon* |
 | Solutions / Soluciones | *Coming soon* |

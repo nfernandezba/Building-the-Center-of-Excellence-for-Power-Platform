@@ -19,6 +19,11 @@
           "type": "amazon",
           "label": "Amazon.com",
           "url": "https://www.amazon.com/dp/B0H2VTJZGR"
+        },
+        {
+          "type": "amazon",
+          "label": "Amazon.es",
+          "url": "https://www.amazon.es/dp/B0H2VTJZGR"
         }
       ]
     },
@@ -33,6 +38,11 @@
           "type": "amazon",
           "label": "Amazon.com",
           "url": "https://www.amazon.com/dp/B0GZGL3T1K"
+        },
+        {
+          "type": "amazon",
+          "label": "Amazon.es",
+          "url": "https://www.amazon.es/dp/B0GZGL3T1K"
         }
       ]
     }
