@@ -69,6 +69,8 @@ function renderShelf(type) {
   const items = publications.filter((publication) => publication.type === type).sort((left, right) => left.order - right.order);
 
   count.textContent = String(items.length).padStart(2, "0");
+  const navCount = document.querySelector(`[data-publication-count-nav="${type}"]`);
+  if (navCount) navCount.textContent = `(${items.length})`;
   shelf.replaceChildren(...items.map((publication) => {
     const edition = getEdition(publication);
     const button = document.createElement("button");
@@ -103,8 +105,31 @@ async function initialiseLibrary() {
   }
 }
 
+function trackShelfInView() {
+  const links = [...document.querySelectorAll("[data-shelf-link]")];
+  const shelves = links.map((link) => document.getElementById(`shelf-${link.dataset.shelfLink}`));
+  if (links.length === 0 || shelves.includes(null)) return;
+
+  // The current shelf is the last one whose top has passed 40% of the viewport; at the
+  // bottom of the page it is always the last shelf, which may never reach that line.
+  const update = () => {
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    let current = 0;
+    shelves.forEach((shelf, index) => { if (shelf.getBoundingClientRect().top <= window.innerHeight * 0.4) current = index; });
+    if (atBottom) current = shelves.length - 1;
+    links.forEach((link, index) => link.toggleAttribute("aria-current", index === current));
+  };
+
+  let queued = false;
+  const schedule = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; update(); }); };
+  window.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", schedule);
+  update();
+}
+
 closeButton.addEventListener("click", closePublication);
 backdrop.addEventListener("mousedown", (event) => { if (event.target === backdrop) closePublication(); });
 window.addEventListener("keydown", (event) => { if (event.key === "Escape" && activePublication) closePublication(); });
 
 initialiseLibrary();
+trackShelfInView();
